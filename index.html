@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxuria Watch & Co.</title>
+  <style>
+     
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ebebeb;
+      }
+  
+      nav {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+  
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+      }
+  
+      .search-bar {
+        flex-grow: 1;
+        text-align: center;
+      }
+  
+      input[type="text"] {
+        padding: 8px;
+        width: 70%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+  
+      .menu {
+        display: flex;
+        gap: 20px;
+      }
+  
+      .menu a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+  
+      .menu a:hover {
+        background-color: #ddd;
+        color: #474747;
+      }
+    
+    .intro {
+      height: 600px;
+      background-image: url(https://wallpapercave.com/wp/wp1857968.jpg );
+      background-size: cover;
+      min-height: 600px;
+      max: width auto;
+      height:auto;
+      object-fit:cover;
+    }
+    .cen {
+      position:absolute;
+      text-align: left;
+      top: 28%;
+      left: 4%;
+      font-size:  200% ;
+      color:white;
+      
+    }
+    .slogan{
+      font-size: 55% ;
+    }
+    .title{
+      
+      text-align: center;
+      top: 109;
+      left: 38%;
+      font-size: 350% ;
+      color:rgb(0, 0, 0);
+      text-decoration:  underline #777;
+}
+  
+      
+      
+    .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            position: relative;
+            width: 18%;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .product p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .product span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .buy-now {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .product:hover .buy-now {
+            display: block;
+        }
+
+        .buy-now button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+        }
+      
+        .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-next {
+  background-color: #000000;
+  color: white;
+}
+
+.btn-prev {
+  background-color: #000000;
+  color: white;
+}
+
+ 
+  </style>
+</head>
+<body>
+   
+  <nav>
+    <div class="logo">LUXURIA WATCH AND CO.</div>  
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href=" http://127.0.0.1:5500/brand.html">Brand</a>
+      <a href="#">Shop</a>
+      <a href="#">Service</a>
+      <a href="#">Help</a>
+    </div>
+  </nav>
+   
+  <div class="intro"></div>
+   <div class="cen">LUXURIA WATCH AND CO.
+    <h4>Uber Luxury Watches <br>    100% Certified Pre-Owned
+    </h4>
+    <h6 class="slogan"><i>"Elevate your style with our curated <br> collection of luxury watches, each <br> authenticated for unrivaled  <br>craftsmanship and timeless elegance."</i></h6>
+   </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="title"> Rolex GMT Master</div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="product-container">
+  <div class="product">
+      <img src=" https://th.bing.com/th/id/OIP.zwaEHyHpFioztiAQfFUw4wHaHa?rs=1&pid=ImgDetMain" alt="Product 1"> 
+      <h3>Rolex Gmt Master Ii 116719Blro Black Dial Blue And Red Ceramic Bezel 40Mm 18Kt White Gold Watch</h3>
+  
+      <p> 
+      Rolex GMT Master II 116719BLRO Black Dial Blue and Red Ceramic Bezel 40mm 18kt White Gold Men’s
+      The Rolex GMT Master II 116719BLRO features 40mm 18kt white gold case, bi-directional rotating bezel, solid case back, scratch resistant sapphire crystal, black dial, folding oysterclasp, automatic movement, 31 jewels, power reserve 50 h, water resistant to 100m/330ft.</p>
+      <p><span> $520,000</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+  <div class="product"> 
+      <img src=" https://th.bing.com/th/id/OIP.kJn7om5weUq-CCfYCQjt_AHaHa?w=800&h=800&rs=1&pid=ImgDetMain" alt="Product 1">
+      <h3> Rolex GMT-Master II Root Beer Steel & Everose gold 126711CHNR </h3>
+ 
+      <p> The Rolex Root Beer is a nickname for a variant of the Rolex GMT-Master II watch, notable for its unique brown and black or brown and gold bezel, which resembles the colors of root beer. It often features a two-tone case of stainless steel and gold.</p>
+      <p><span> $350,000</span></p> 
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+  <div class="product">
+      <img src=" https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSreTFvbpeys1u3CU2xqAGhm3Qgt9ZZWaBecZyaxxWGrg1GjAPgv6Az3fAoC_RyppoOyX84eqcNNOK9fbIl6qBE8xrW9dv4tcuZHJ9Udu77a-Lq9355R_z5&usqp=CAE" alt="Product 1">
+      <h3> Rolex GMT-Master II 126715CHNR </h3>
+ 
+      <p>Solid 18kt Everose Gold case with polished finished edges & a brushed/satin finished top. Crown: Polished 18kt Everose Gold crown. Patented 'Triplock' locking crown ensuring that the crown screws down onto the Oyster case as securely as a submarine hatch. Bezel: Polished 18kt Everose Gold with a ribbed edge for a sure grip. Bi-directional rotating bezel with 24 hour markings.
+
+      </p>
+      <p><span> $600,000 </span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+    <div class="product">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQTDPip4b75TLSb_5y--BzQeGI4YsbYTMtERXmbOR5xQ08KhvR4eH7MLb41NaZa-g2tlvs1OHR7LMbhcYzxWy-5lyRmbUGAkF9a8pxQz5jmt6pzASdX_Xj9&usqp=CAE" alt="Product 1">
+      <h3>Rolex Gmt Master Ii Batman 126710Blnr-0003 40Mm Oyster Steel Black And Blue Ceramic Bezel Oyster Bracelet  Watch  </h3> 
+      <p >Rolex GMT Master II Batman 126710BLNR-0003 40mm Oyster Steel Black and Blue Ceramic Bezel Oyster Bracelet Men’s Watch Designed to show the time in two different time zones simultaneously, the Rolex GMT-Master II was originally developed as a navigation instrument for professionals crisscrossing the globe when launched in 1955. Heir to the original model, the Oyster Perpetual GMT-Master II was unveiled in 1982, with a new movement ensuring ease of use. Its combination of peerless functionality, robustness and instantly recognizable aesthetics has attracted a wider audience of world traveller  </p>
+      <p><span>  $200,000</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+ <div class="title"> Rolex Daytona </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="product-container">
+  <div class="product">
+      <img src="https://th.bing.com/th/id/OIP._9aafXD3u7BuwrNw6V4vUwHaHa?w=550&h=550&rs=1&pid=ImgDetMain " alt="Product 1"> 
+      <h3> Rolex Daytona 116595RBOW-0001</h3>
+      <p>Chronograph Automatic Chronometer Diamond Black Dial Unisex WATCH SPECIFICATIONS: Brand: Rolex Collection: Daytona Gender: Unisex Movement </p>
+      <p><span> $490,000.00</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+    <div class="product">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSwow4n-j0oE6CDQQVl98YLpkkzKyVK44ofLNof8yPa8jwFhlW0OfNI4h3u748b4WBkQjT9tK9UqEt9rninTpigEl8EwcG__jwoZ7xK4pOB1L1K0GlqBJR5&usqp=CAE " alt="Product 1">
+      <h3>Rolex Cosmograph Daytona 126506-0002 </h3>
+      <p> This model features an ice-blue, diamond-set dial with snailed counters, 18 ct gold applique hour markers and hands with a Chromalight display, a highly-legible luminescent material.</p>
+      <p><span>$2,95,000.00 </span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+  <div class="product">
+      <img src="  https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRyKlYWFUlWCwDOFSgrY336JUdBRKfQMbAe-vl-x949XiPAdPGoOA2gamHUYgDQhhZwemRv_3K3hFq5YGgoQDABKjkWtX42pvB9_OhwIk-gbVOwCxpVqHLgYw&usqp=CAE " alt="Product 1">
+      <h3> The Rolex Cosmograph Daytona</h3>
+      <p> This model features a white dial with snailed counters, 18 ct gold applique hour markers and hands with a Chromalight display, a highly-legible luminescent material</p>
+      <p><span> $514,,000</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+    <div class="product">
+      <img src="  https://cdn-jnbkl.nitrocdn.com/DSyXimFVbLZsDRQHgxpswYJEIlNbdghE/assets/images/optimized/rev-6761e6c/luxurysouq.com/wp-content/uploads/2023/07/116520.jpg " alt="Product 1">
+      <h3> Rolex Daytona 116520 La Montoya Artisans De Genève</h3> 
+      <p > Steel Bracelet material: Steel Year of production: 2020 (Approximation) Gender: Men's watch/Unisex Movement: Automatic Movement/Caliber: 4130 Number of jewels: 44 Case diameter: 40 mm Water resistance: 10 ATM Bezel material: Carbon Others: Skeletonized, Limited Edition</p>
+      <p><span> $840,000</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+</div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="title"> Rolex Submariner</div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="product-container">
+  <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSeOBN8dutDq19GBMffKlHH55Pl-42ISIa5Ob1Mkx7zpNYd71t7JogDr4pmLFBDI8zoy9E2xNIwQ6AOnjTNkD5xWVT6_l7AiyBgwL9tpNzHIleVSFBXNR6g&usqp=CAE " alt="Product 1"> 
+      <h3> Submariner Date Green Dial Oystersteel Men's Watch 116610LV-0002</h3>
+      <p>Features a polished with brushed 904L Oystersteel stainless steel case and Oyster bracelet. Green Cerachrom insert ceramic unidirectional rotating bezel with engraved platinum coated 60 minute scale and graduations. Green dial with luminescent hands, dotes and indexes </p>
+      <p><span>  $338,500</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+  <div class="product"> 
+      <img src=" https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSTq79ut_nYyfz7WZyEWc-lMB2I5MV5FMxOfjDF0VYErxB9_eAFfjUjZSe3vjZ6AEKaa1rI-DwgaoBLBt1Cg61NOlHVL2SuogTAf44hoog1vyUoV9dukyNv&usqp=CAE" alt="Product 1">
+      <h3> Rolex Submariner Date 116619Lb Blue Dial Cerachrom Bezel 40Mm</h3>
+      <p>  Dated 2011, this highly desired 18ct white gold watch features a 40mm white gold watch casing, with a unidirectional rotatable cerachrom bezel in blue ceramic </p>
+      <p><span> $500,680</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+  <div class="product">
+      <img src=" https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFo_ZBHKawchUOu3pYmjzaFuvn4NHsvXVQPXTmcy8CbFEiHGD1I82YL8NIcUmnVW3k8mjRPYRHh05D8GDd8ePgftB8hnpCAICy1D88Ytw6UCyuc4zz_-j08Q&usqp=CAE " alt="Product 1">
+      <h3> Rolex Submariner 116618LN </h3>
+      <p> 40mm 18k yellow gold case, black dial, black bezel, and styled on a yellow gold Oyster bracelet. The bezel has ribbed edges that are easy to grip underwater. Luminous hour markers, hands, and a Chromalight display provide clear legibility in every circumstance. </p>
+      <p><span>  $350,000</span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+
+    <div class="product">
+      <img src=" https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSipD6p62Vpti7W-c0euGChmIw9vejNtFb-mkna5EE1ihd1dXrCEQAnMJ7hVPLQjWh0DeuwwK3KjwH2U0WCFn_1wrePmXlRCXP6qnzOGtjNwS6XaUefPRzE&usqp=CAE" alt="Product 1">
+      <h3>Rolex Submariner 126618lb-0002</h3> 
+      <p >Manufactured by Rolex from a hard, corrosion-resistant ceramic, the Cerachrom bezel insert is virtually scratchproof. A luminescent capsule on the zero marker ensures legibility, no matter how dark the environment. </p>
+      <p><span> $ 468,000 </span></p>
+      <div class="buy-now">
+          <button>Buy Now</button>
+      </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+ <div class="container">
+    <div class="page active" id="page1">
+    <div class="navigation">
+    <button class="btn btn-prev"> <a href="http://127.0.0.1:5500/next.html">  Previous Page </a> </button>
+    <button class="btn btn-next" ><a href="http://127.0.0.1:5500/next.html"> Next Page </a> </button>
+    </div>
+    </div>
+</div>  
+  
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
